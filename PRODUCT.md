@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static HTML, CSS and ES modules, no build step. GSAP and Three.js vendored as local files. Deploys to GitHub Pages as is.
+Static HTML, CSS and JavaScript with no frontend build step. GSAP and Three.js are vendored locally. A small FastAPI function sends contact messages through authenticated SMTP. The frontend and API deploy together on Vercel.
 
 ## Users
 
@@ -35,7 +35,7 @@ Name: Karthik Kumar. Voice: plain, first person, modest. Contact: personal email
 
 ## Evidence on Hand
 
-Content of the previous portfolio.html in this folder (project descriptions, stacks, repo links, education). No imagery.
+Content of the previous portfolio.html in this folder (project descriptions, stacks, repo links, education) and the supplied six-frame character reference video.
 
 ## Product Principles
 

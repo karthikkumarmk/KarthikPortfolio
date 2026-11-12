@@ -1,6 +1,16 @@
 .env
+.env.local
+.vercel/
+.venv/
+.playwright-mcp/
+artifacts/
+__pycache__/
+*.py[cod]
 node_modules/
 portfolio.html
+gif.mp4
 .impeccable/
 .claude/
 .taste-skill/
+.vercel
+.env*

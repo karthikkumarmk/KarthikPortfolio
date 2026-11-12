@@ -1,0 +1,11 @@
+.env
+.venv
+.git
+artifacts
+.playwright-mcp
+.impeccable
+.taste-skill
+__pycache__
+tests
+gif.mp4
+portfolio.html

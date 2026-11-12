@@ -13,7 +13,8 @@
     })();
   </script>
   <title>Karthik Kumar, software developer and AI/ML student</title>
-  <meta name="description" content="Karthik Kumar is a B.Tech AI and ML student in Bengaluru who builds web apps and small AI tools. Projects, skills and contact details.">
+  <meta name="description" content="Karthik Kumar is a B.Tech AI and ML student in Bengaluru who builds full-stack web apps and AI projects. Projects, skills and contact details.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%233f86ff'/%3E%3Cpath d='M16 12h10v17l15-17h12L36 31l18 21H41L26 34v18H16Z' fill='%2312141c'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
@@ -44,11 +45,13 @@
     <main>
       <section class="hero" id="top">
         <h1 class="name"><span class="line"><span data-rise>Karthik</span></span><span class="line"><span data-rise>Kumar</span></span></h1>
+        <figure class="hero-character" id="character" data-rise aria-label="Illustration of Karthik waving hello">
+          <noscript><img src="assets/character-animation.svg" alt="Karthik waving hello" width="736" height="736"></noscript>
+        </figure>
         <div class="hero-foot">
-          <p class="intro" data-rise>B.Tech student in AI and Machine Learning at JAIN (Deemed-to-be-University), Bengaluru. I build web apps and small AI tools.</p>
+          <p class="intro" data-rise>B.Tech student in AI and Machine Learning at JAIN (Deemed-to-be-University), Bengaluru. I build full-stack web apps and AI projects.</p>
           <div class="actions" data-rise>
             <a class="btn btn-primary" href="#work">See projects</a>
-            <a class="btn btn-secondary" href="mailto:mkarthik0609@gmail.com">Email me</a>
           </div>
         </div>
       </section>
@@ -142,13 +145,38 @@
 
         <article class="card card-contact" id="contact" style="--i:8">
           <h2>Get in touch</h2>
-          <ul class="contact-list">
-            <li><span>Email</span><a href="mailto:mkarthik0609@gmail.com">mkarthik0609@gmail.com</a></li>
-            <li><span>College email</span><a href="mailto:juug25btech16799@jainuniversity.ac.in">juug25btech16799@jainuniversity.ac.in</a></li>
-            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/karthik-kumar-mk" target="_blank" rel="noopener">linkedin.com/in/karthik-kumar-mk</a></li>
-            <li><span>GitHub</span><a href="https://github.com/mkkarthik0609-ui" target="_blank" rel="noopener">github.com/mkkarthik0609-ui</a></li>
-            <li><span>GitHub, college</span><a href="https://github.com/karthikkumar-0609" target="_blank" rel="noopener">github.com/karthikkumar-0609</a></li>
-          </ul>
+          <div class="contact-layout">
+            <ul class="contact-list">
+              <li><span>Email</span><a href="mailto:mkarthik0609@gmail.com">mkarthik0609@gmail.com</a></li>
+              <li><span>College email</span><a href="mailto:juug25btech16799@jainuniversity.ac.in">juug25btech16799@jainuniversity.ac.in</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/karthik-kumar-mk" target="_blank" rel="noopener">linkedin.com/in/karthik-kumar-mk</a></li>
+              <li><span>GitHub</span><a href="https://github.com/mkkarthik0609-ui" target="_blank" rel="noopener">github.com/mkkarthik0609-ui</a></li>
+              <li><span>GitHub, college</span><a href="https://github.com/karthikkumar-0609" target="_blank" rel="noopener">github.com/karthikkumar-0609</a></li>
+            </ul>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+              </div>
+              <div class="field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+              </div>
+              <div class="field field-message">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="6" minlength="10" maxlength="5000" required></textarea>
+              </div>
+              <div class="hp-field" aria-hidden="true">
+                <label for="contact-website">Website</label>
+                <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <button class="form-submit" type="submit">
+                <span>Send message</span>
+                <span class="form-spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
         </article>
       </div>
     </main>
